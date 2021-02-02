@@ -15,6 +15,7 @@ dependencies:
 
   cupertino_icons: ^1.0.0
   flutter_bloc: ^6.1.1
+  dotted_border: ^1.0.7
 
 dev_dependencies:
   flutter_test:
@@ -22,4 +23,15 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/
+  fonts:
+   - family:  SFProText
+     fonts:
+      - asset: assets/fonts/SFProText.ttf
+   - family:  AppIcons
+     fonts:
+      - asset: assets/fonts/AppIcons.ttf
+  
+
 

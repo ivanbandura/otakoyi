@@ -6,12 +6,6 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScreenTemplate(
-      body: SingleChildScrollView(
-        child: Column(
-          children: [],
-        ),
-      ),
-    );
+    return ScreenTemplate(index: 0, body: Container());
   }
 }

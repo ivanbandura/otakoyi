@@ -8,6 +8,7 @@ class OtakoyiApp extends StatelessWidget {
       title: 'Dubai',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        fontFamily: 'SFProText',
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
