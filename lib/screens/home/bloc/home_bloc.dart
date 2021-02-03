@@ -9,8 +9,20 @@ part 'home_state.dart';
 class HomeBloc extends Bloc<HomeEvent, HomeState> {
   HomeBloc() : super(HomeInitial());
 
+  int currentPromo = 0;
+
   @override
   Stream<HomeState> mapEventToState(
     HomeEvent event,
-  ) async* {}
+  ) async* {
+    if (event is NextImageEvent) {
+      currentPromo = event.index;
+
+      yield RefreshState();
+    }
+    if (event is RefreshEvent) {
+      print('refresh');
+      yield InitialOrderingState();
+    }
+  }
 }

@@ -12,20 +12,20 @@ class Promo {
 class Product {
   final String image, name, size, price;
 
-  Product(
+  Product({
     this.image,
     this.name,
     this.size,
     this.price,
-  );
+  });
 }
 
 class Category {
   final String name, count, image;
 
-  Category(
+  Category({
     this.name,
     this.count,
     this.image,
-  );
+  });
 }

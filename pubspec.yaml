@@ -27,6 +27,8 @@ flutter:
   assets:
     - assets/images/
     - assets/images/promo/
+    - assets/images/products/
+    - assets/images/categories/
   fonts:
    - family:  SFProText
      fonts:

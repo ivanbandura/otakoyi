@@ -23,6 +23,40 @@ List<Promo> promoList = [
       category: 'EVERYTHING')
 ];
 
-List<Product> productsList = [];
+List<Product> womenProducts = [
+  Product(
+      image: 'assets/images/products/woman_1.png',
+      name: 'Geen Faux Fur Parka',
+      size: '6 / 20 Tall',
+      price: '282 SAR'),
+  Product(
+      image: 'assets/images/products/woman_2.png',
+      name: 'Black Dip Hem Dress',
+      size: '8 / 18',
+      price: '179 SAR'),
+  Product(
+      image: 'assets/images/products/woman_3.png',
+      name: 'Black Maternity Nursing Slip',
+      size: '6 / 22',
+      price: '93 SAR'),
+];
+
+List<Product> menProducts = [
+  Product(
+      image: 'assets/images/products/man_1.png',
+      name: 'Barbour® White Dial Polo',
+      size: 'Small / Large',
+      price: '290 SAR'),
+  Product(
+      image: 'assets/images/products/man_2.png',
+      name: 'Adidas Black Gradient T-Shirt',
+      size: 'Small / Large',
+      price: '169 SAR'),
+  Product(
+      image: 'assets/images/products/man_3.png',
+      name: 'Barbour® Poloshirt',
+      size: 'Small / Large',
+      price: '355 SAR'),
+];
 
 List<Category> categoriesList = [];
