@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:otakoyi/widgets/custom_app_bar.dart';
-import 'package:otakoyi/widgets/custom_bottom_navigation_bar.dart';
+import 'package:otakoyi/widgets/custom_bottom_bar.dart';
 
 class ScreenTemplate extends StatelessWidget {
   final Widget body;
