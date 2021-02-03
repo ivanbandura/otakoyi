@@ -59,34 +59,52 @@ class _ProductImage extends StatelessWidget {
   }
 }
 
-class _LikeButton extends StatelessWidget {
+class _LikeButton extends StatefulWidget {
   const _LikeButton({Key key}) : super(key: key);
 
+  @override
+  __LikeButtonState createState() => __LikeButtonState();
+}
+
+class __LikeButtonState extends State<_LikeButton> {
+  bool presssedFovorite = false;
   @override
   Widget build(BuildContext context) {
     return IconButton(
       icon: Icon(
         AppIcons.product_like,
         size: 14,
-        color: Colors.grey,
+        color: presssedFovorite ? Colors.red : Colors.grey,
       ),
-      onPressed: () {},
+      onPressed: () => setState(() {
+        presssedFovorite = !presssedFovorite;
+      }),
     );
   }
 }
 
-class _BuyButton extends StatelessWidget {
-  const _BuyButton({Key key}) : super(key: key);
+// ignore: must_be_immutable
+class _BuyButton extends StatefulWidget {
+  _BuyButton({Key key}) : super(key: key);
 
+  @override
+  __BuyButtonState createState() => __BuyButtonState();
+}
+
+class __BuyButtonState extends State<_BuyButton> {
+  bool presssedBuy = false;
   @override
   Widget build(BuildContext context) {
     return RawMaterialButton(
-      onPressed: () {},
+      onPressed: () => setState(() {
+        presssedBuy = !presssedBuy;
+      }),
       elevation: 1.0,
       fillColor: Colors.white,
       child: Icon(
         AppIcons.product_cart,
         size: 18.0,
+        color: presssedBuy ? Color.fromRGBO(199, 175, 103, 1) : Colors.black,
       ),
       padding: EdgeInsets.all(8.0),
       shape: CircleBorder(),

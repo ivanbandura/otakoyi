@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:otakoyi/models/models.dart';
-import 'package:otakoyi/screens/home/view/product_card.dart';
+import 'package:otakoyi/widgets/product_card.dart';
 
-class NewInProducts extends StatelessWidget {
+class NewIn extends StatelessWidget {
   final Color backgroundColor, fontColor;
   final String count, sex;
   final List<Product> products;
 
-  NewInProducts(
+  NewIn(
       {Key key,
       this.backgroundColor,
       this.fontColor,
@@ -31,9 +31,7 @@ class NewInProducts extends StatelessWidget {
             child: SizedBox(height: 40),
           ),
           Padding(
-            padding: const EdgeInsets.only(
-              left: 15.0,
-            ),
+            padding: const EdgeInsets.only(left: 15.0),
             child: _NewInInfo(
               count: count,
               sex: sex,

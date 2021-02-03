@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:otakoyi/repositories/repository.dart';
 import 'package:otakoyi/screens/home/bloc/home_bloc.dart';
-import 'package:otakoyi/screens/home/view/new_in_products.dart';
-import 'package:otakoyi/screens/home/view/promo_slider.dart';
+import 'package:otakoyi/screens/home/view/new_in.dart';
+import 'package:otakoyi/screens/home/view/promo.dart';
 import 'package:otakoyi/widgets/screen_template.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -43,16 +43,16 @@ class _Body extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           PromoSlider(),
-          NewInProducts(
-            count: '600',
-            sex: 'WOMEN',
+          NewIn(
+            count: '604',
+            sex: 'WOMEN\'S',
             backgroundColor: Colors.transparent,
             fontColor: Colors.black,
             products: womenProducts,
           ),
-          NewInProducts(
+          NewIn(
             count: '192',
-            sex: 'MEN',
+            sex: 'MEN\'S',
             backgroundColor: Colors.black,
             fontColor: Colors.white,
             products: menProducts,
