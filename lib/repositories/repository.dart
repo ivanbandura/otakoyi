@@ -59,4 +59,31 @@ List<Product> menProducts = [
       price: '355 SAR'),
 ];
 
-List<Category> categoriesList = [];
+List<Category> womanCategoriesList = [
+  Category(
+      name: 'DRESSES',
+      count: '291',
+      image: 'assets/images/categories/category_1.png'),
+  Category(
+      name: 'COATS & JACKETS',
+      count: '762',
+      image: 'assets/images/categories/category_2.png'),
+  Category(
+      name: 'JUMPSUITS & PLAYSUITS',
+      count: '291',
+      image: 'assets/images/categories/category_3.png'),
+  Category(
+      name: 'KNITWEAR',
+      count: '119',
+      image: 'assets/images/categories/category_4.png'),
+  Category(
+      name: 'NIGHTWEAR & PYJAMAS',
+      count: '201',
+      image: 'assets/images/categories/category_5.png'),
+  Category(
+      name: 'SETS & OUTFITS',
+      count: '179',
+      image: 'assets/images/categories/category_6.png')
+];
+
+List<Category> menCategoriesList = [];
