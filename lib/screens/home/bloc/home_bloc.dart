@@ -21,12 +21,6 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
       yield RefreshState();
     }
 
-    if (event is BuyProductEvent) {
-      event.presssedBuy = !event.presssedBuy;
-      print(event.presssedBuy);
-      yield RefreshState();
-    }
-
     if (event is RefreshEvent) {
       yield InitialOrderingState();
     }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:otakoyi/core/app_icons_icons.dart';
+import 'package:otakoyi/core/app_icons.dart';
 import 'package:otakoyi/widgets/avatar.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {

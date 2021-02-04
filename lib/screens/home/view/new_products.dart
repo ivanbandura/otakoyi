@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:otakoyi/models/models.dart';
 import 'package:otakoyi/widgets/product_card.dart';
 
-class NewIn extends StatelessWidget {
+class NewProducts extends StatelessWidget {
   final Color backgroundColor, fontColor;
   final String count, sex;
   final List<Product> products;
 
-  NewIn(
+  NewProducts(
       {Key key,
       this.backgroundColor,
       this.fontColor,
@@ -32,7 +32,7 @@ class NewIn extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 15.0),
-            child: _NewInInfo(
+            child: _NewProductsInfo(
               count: count,
               sex: sex,
               fontColor: fontColor,
@@ -55,11 +55,11 @@ class NewIn extends StatelessWidget {
   }
 }
 
-class _NewInInfo extends StatelessWidget {
+class _NewProductsInfo extends StatelessWidget {
   final Color backgroundColor, fontColor;
   final String count, sex;
 
-  const _NewInInfo(
+  const _NewProductsInfo(
       {Key key, this.backgroundColor, this.fontColor, this.count, this.sex})
       : super(key: key);
 
@@ -104,7 +104,7 @@ class _SeeMoreButton extends StatelessWidget {
         'SEE MORE',
         style: TextStyle(
             color: Color.fromRGBO(199, 175, 103, 1),
-            fontSize: 12.0,
+            fontSize: 11.0,
             letterSpacing: 1.0),
       ),
       onTap: () {},
