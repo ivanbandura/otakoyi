@@ -56,13 +56,10 @@ class CustomBottomNavigationBar extends StatelessWidget {
     final double height = MediaQuery.of(context).size.height;
 
     return Container(
-      height: height * 0.125,
+      height: height * 0.123,
       color: Colors.transparent,
       child: ClipRRect(
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(18.0),
-          topRight: Radius.circular(18.0),
-        ),
+        borderRadius: BorderRadius.circular(18.0),
         child: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
           backgroundColor: Colors.black,

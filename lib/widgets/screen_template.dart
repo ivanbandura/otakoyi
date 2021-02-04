@@ -10,9 +10,19 @@ class ScreenTemplate extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
+      extendBody: true,
       backgroundColor: Colors.white,
       appBar: CustomAppBar(),
-      body: body,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SizedBox(height: 120),
+            body,
+            SizedBox(height: 110),
+          ],
+        ),
+      ),
       bottomNavigationBar: CustomBottomNavigationBar(
         index: index,
       ),

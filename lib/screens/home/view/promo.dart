@@ -32,9 +32,9 @@ class _PromoSliderState extends State<PromoSlider> {
             items: promoSliders,
             options: CarouselOptions(
               height: height * 0.37,
-              autoPlay: false,
+              autoPlay: true,
               enableInfiniteScroll: true,
-              autoPlayInterval: Duration(seconds: 6),
+              autoPlayInterval: Duration(seconds: 4),
               enlargeCenterPage: false,
               viewportFraction: 0.93,
               aspectRatio: 16 / 9,

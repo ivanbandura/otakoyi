@@ -41,9 +41,7 @@ class _ProductImage extends StatelessWidget {
       child: Stack(
         children: [
           ClipRRect(
-            borderRadius: BorderRadius.all(
-              Radius.circular(20.0),
-            ),
+            borderRadius: BorderRadius.all(Radius.circular(20.0)),
             child: Image.asset(
               image,
               fit: BoxFit.cover,
@@ -68,17 +66,22 @@ class _LikeButton extends StatefulWidget {
 
 class __LikeButtonState extends State<_LikeButton> {
   bool presssedFovorite = false;
+
+  _handleLikeSate() => setState(() {
+        presssedFovorite = !presssedFovorite;
+      });
+
   @override
   Widget build(BuildContext context) {
     return IconButton(
+      splashColor: Colors.transparent,
+      highlightColor: Colors.transparent,
       icon: Icon(
         AppIcons.product_like,
         size: 14,
         color: presssedFovorite ? Colors.red : Colors.grey,
       ),
-      onPressed: () => setState(() {
-        presssedFovorite = !presssedFovorite;
-      }),
+      onPressed: () => _handleLikeSate(),
     );
   }
 }
@@ -93,12 +96,14 @@ class _BuyButton extends StatefulWidget {
 
 class __BuyButtonState extends State<_BuyButton> {
   bool presssedBuy = false;
+
+  _handleBuyState() => setState(() {
+        presssedBuy = !presssedBuy;
+      });
+
   @override
   Widget build(BuildContext context) {
     return RawMaterialButton(
-      onPressed: () => setState(() {
-        presssedBuy = !presssedBuy;
-      }),
       elevation: 1.0,
       fillColor: Colors.white,
       child: Icon(
@@ -108,6 +113,7 @@ class __BuyButtonState extends State<_BuyButton> {
       ),
       padding: EdgeInsets.all(8.0),
       shape: CircleBorder(),
+      onPressed: () => _handleBuyState(),
     );
   }
 }
@@ -143,7 +149,10 @@ class _ProductInfo extends StatelessWidget {
         Text(
           price,
           style: TextStyle(
-              fontWeight: FontWeight.bold, fontSize: 14.0, color: fontColor),
+            fontWeight: FontWeight.bold,
+            fontSize: 14.0,
+            color: fontColor,
+          ),
         ),
       ],
     );

@@ -39,28 +39,26 @@ class _Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          PromoSlider(),
-          NewProducts(
-            count: '604',
-            sex: 'WOMEN\'S',
-            backgroundColor: Colors.transparent,
-            fontColor: Colors.black,
-            products: womenProducts,
-          ),
-          NewProducts(
-            count: '192',
-            sex: 'MEN\'S',
-            backgroundColor: Colors.black,
-            fontColor: Colors.white,
-            products: menProducts,
-          ),
-          Categories()
-        ],
-      ),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        PromoSlider(),
+        NewProducts(
+          count: '604',
+          sex: 'WOMEN\'S',
+          backgroundColor: Colors.transparent,
+          fontColor: Colors.black,
+          products: womenProducts,
+        ),
+        NewProducts(
+          count: '192',
+          sex: 'MEN\'S',
+          backgroundColor: Colors.black,
+          fontColor: Colors.white,
+          products: menProducts,
+        ),
+        Categories(),
+      ],
     );
   }
 }
