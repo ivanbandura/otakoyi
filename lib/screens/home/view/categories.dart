@@ -10,7 +10,7 @@ class Categories extends StatelessWidget {
     final double height = MediaQuery.of(context).size.height;
 
     return Container(
-      height: height * 0.94,
+      height: height * 0.915,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -32,7 +32,8 @@ class Categories extends StatelessWidget {
             ),
           ),
           SizedBox(height: 20.0),
-          _CategoryTabBar()
+          _CategoryTabBar(),
+          SizedBox(height: 30.0),
         ],
       ),
     );
